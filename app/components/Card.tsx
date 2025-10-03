@@ -1,19 +1,28 @@
+import Link from "next/link";
 type Props = {
   header: string;
   details: string;
   link: string;
 }
 
-export default function Card({header, details, link} : Props) {
+
+
+export default function Card({ header, details, link } : Props) {
   return (
-    <main >
-      <a 
-        href={link}
-        className="w-40 h-72 bg-gray-100 text-black flex flex-col items-center justify-between p-8 m-2"> 
+    <Link href={link}>
+      <div className="w-80 p-6 rounded-2xl shadow-lg cursor-pointer 
+                      bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200
+                      hover:from-pink-200 hover:via-purple-300 hover:to-indigo-200
+                      transform hover:scale-105 transition duration-300 ease-in-out">
+        
+        <h2 className="text-2xl font-extrabold text-indigo-800 mb-2">
           {header}
-          <br/>
+        </h2>
+        <p className="text-gray-700 font-medium">
           {details}
-      </a>
-    </main>
+        </p>
+      </div>
+    </Link>
   );
 }
+
