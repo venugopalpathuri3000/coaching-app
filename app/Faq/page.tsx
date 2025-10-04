@@ -6,7 +6,7 @@ export default function FAQ() {
       </a>
 
       <section className="w-full max-w-2xl bg-white/80 shadow-lg rounded-2xl p-8 space-y-6 border border-indigo-200">
-        <h1 className="text-3xl font-extrabold text-indigo-700 text-center">🌟 FAQ</h1>
+        <h1 className="text-3xl font-extrabold text-indigo-700 text-center">FAQ</h1>
 
         <div className="space-y-4">
           <div className="p-5 rounded-xl bg-gradient-to-r from-pink-200 via-purple-200 to-indigo-200 shadow-md">
